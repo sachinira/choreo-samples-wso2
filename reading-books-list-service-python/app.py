@@ -52,7 +52,7 @@ def update_book_status(book_id):
     return '', 404
 
 @app.route('/healthz', methods=['GET'])
-async def health_check():
+def health_check():
     return {"status": "UP"}
 
 if __name__ == '__main__':
