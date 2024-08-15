@@ -51,9 +51,5 @@ def update_book_status(book_id):
             return jsonify(book)
     return '', 404
 
-@app.route('/reading-list/healthz', methods=['GET'])
-def health_check():
-    return {"status": "UP"}
-
 if __name__ == '__main__':
     app.run()
